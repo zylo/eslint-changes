@@ -51,7 +51,7 @@ const setGithubStatus = (eslintReport) => {
   const description = `errors: ${errors} warnings: ${warnings}`;
   const repo = parsedSlug[1];
   const user = parsedSlug[0];
-  const targetUrl = `https://travis-ci.org/${process.env.TRAVIS_REPO_SLUG}/jobs/${process.env.TRAVIS_JOB_ID}`;
+  const targetUrl = `https://travis-ci.com/${process.env.TRAVIS_REPO_SLUG}/jobs/${process.env.TRAVIS_JOB_ID}`;
 
   gh.authenticate({
     token: process.env.GITHUB_TOKEN,
