@@ -4,6 +4,8 @@ ESLint changes is a script that is run by TravisCI for commits and pull
 requests. It runs ESLint on the files that were changed and adds the
 results to GitHub as a status.
 
+![ESLint Changes status](https://www.dropbox.com/s/ylsxw5exs85aw9f/Screenshot%202016-10-20%2017.20.44.png?dl=1)
+
 ## Installation
 
 - Set GITHUB_TOKEN environment variable in Travis to be a GitHub access
