@@ -32,7 +32,7 @@ const getCommitTarget = (eventType) => {
       sha = parsed[1];
     }
   } else {
-    // console.log(Colors.red('event type \'%s\' not supported'), eventType);
+    console.error('event type \'%s\' not supported', eventType);
     sha = null;
   }
 
@@ -56,6 +56,8 @@ const setGithubStatus = (eslintReport) => {
   gh.authenticate({
     token: process.env.GITHUB_TOKEN,
     type: 'oauth',
+  }, (err) => {
+    if (err) console.error('Error authenticating GitHub', err);
   });
 
   gh.repos.createStatus({
@@ -66,6 +68,8 @@ const setGithubStatus = (eslintReport) => {
     repo,
     sha,
     state,
+  }, (err) => {
+    if (err) console.error('Error creating GitHub status', err);
   });
 };
 
