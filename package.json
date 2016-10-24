@@ -12,6 +12,8 @@
   "bin": "eslint-changes.js",
   "author": "Riley Tomasek",
   "license": "MIT",
+  "bugs": "https://github.com/andofood/eslint-changes/issues",
+  "repository": "andofood/eslint-changes",
   "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
@@ -32,7 +34,7 @@
     "index.js",
     "eslint-changes.js"
   ],
-  "tags": [
+  "keywords": [
     "ando",
     "coverage",
     "eslint",
