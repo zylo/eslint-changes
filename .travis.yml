@@ -6,4 +6,4 @@ node_js:
 before_install:
   - 'npm install -g npm@latest'
 script:
-  - ./eslint-chagnes.js
+  - ./index.js
