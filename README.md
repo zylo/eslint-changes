@@ -15,7 +15,7 @@ results to GitHub as a status.
 
 ```
 install:
-  - npm install eslint-changes
+  - npm install --save-dev eslint-changes
 ```
 
 - Run the ESLint Changes bin during the Travis script step:
