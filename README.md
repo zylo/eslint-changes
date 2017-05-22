@@ -15,7 +15,7 @@ results to GitHub as a status.
 
 ```
 install:
-  - npm install --save-dev eslint-changes
+  - npm install eslint-changes
 ```
 
 - Run the ESLint Changes bin during the Travis script step:
@@ -31,5 +31,5 @@ script:
 - ESLint Changes will use any configuration like .eslintrc, .eslintignore,
   plugins or other configurations that are present in the project.
 - If you don't like installing eslint-changes from Travis, you can add it
-  to your projects package.json and add only the script part to
-  .travis.yml.
+  to your project's package.json and add only the script part to
+  .travis.yml. Just be sure to run `npm install --save-dev eslint-changes`.
