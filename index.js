@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+'use strict';
 
 const Github = require('github');
 const eslint = require('eslint');
