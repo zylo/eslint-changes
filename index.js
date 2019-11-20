@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 'use strict';
 
-const Github = require('github');
+const Github = require('@octokit/rest');
 const eslint = require('eslint');
-const exec = require('child-process-promise').exec;
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 
 const cli = new eslint.CLIEngine();
 
